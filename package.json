@@ -1,0 +1,19 @@
+{
+  "name": "mastering-react",
+  "version": "1.0.0",
+  "description": "This is The Art of React.js Mastery Course by Miraj Asraf",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miraj8280/mastering-react.js.git"
+  },
+  "author": "Miraj Asraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miraj8280/mastering-react.js/issues"
+  },
+  "homepage": "https://github.com/Miraj8280/mastering-react.js#readme"
+}
