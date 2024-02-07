@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Miraj8280/mastering-react.js/issues"
   },
-  "homepage": "https://github.com/Miraj8280/mastering-react.js#readme"
+  "homepage": "https://github.com/Miraj8280/mastering-react.js#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
 }
