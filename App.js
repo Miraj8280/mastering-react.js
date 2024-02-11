@@ -1,37 +1,74 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// React element
-const heading = (
-    <h1 className='heading'>
-        This is a React element
-    </h1>
-);
+// Header component
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          alt="Logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwpvQmMux7nupK6YNrI-fkfDK2rFFQREvKw&usqp=CAU"
+        />
+      </div>
 
-// React component
-// - Class component
-// - Functional component
-const HeadingComponent = () => (
-    <h1>This is a React functional component</h1>
-);
-
-const AuthorOfCourse = () => (
-    <h2 className='author'>- By Miraj Asraf</h2>
-);
-
-// Component composition - Nested React Functional Components
-const CourseTitle = () => (
-    <div className='container'>
-        <h1 className='title'>The Art of React.js Mastery🚀</h1>
-        <AuthorOfCourse />
-        
-        {/* Using React element inside React component */}
-        {heading}
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Sign In</li>
+        </ul>
+      </div>
     </div>
-);
+  );
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(heading);
+// Restaurant Card
+const RestaurantCard = () => {
+  return (
+    <div className="restaurant-card">
+      <img
+        className="restaurant-logo"
+        alt="Restaurant logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5a148e63e9c54942e37627da1aa156be"
+      />
+      <h3>Wow! Momo</h3>
+      <h4>
+        Tibetan, Healthy Food, Asian, Chinese, Snacks
+      </h4>
+      <h4>4.4 Stars</h4>
+      <h4>25-30 mins</h4>
+    </div>
+  );
+};
 
-// Rendering a React component
-root.render(<CourseTitle />);
+// Body component
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search"> Search </div>
+      <div className="restaurant-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
+
+// Main App component
+const App = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
